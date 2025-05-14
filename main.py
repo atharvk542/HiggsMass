@@ -63,7 +63,7 @@ for eventind in df['event'].unique():
         else:   
             neggroup.append(element_df)
     
-    # iterate through each group and calculate invariant masses for all permutations 
+    # iterate through each group and calculate invariant masses for all combinations 
     for group in [posgroup, neggroup]:
         if len(group) < 2:
             continue
@@ -71,7 +71,7 @@ for eventind in df['event'].unique():
         # get all combinations of the group
         combs = combinations(group, 2)
         
-        # calculate invariant mass for each permutation
+        # calculate invariant mass for each combination
         for comb in combs:
             pt1, pt2 = comb[0]['pT'].values[0], comb[1]['pT'].values[0]
             n1, n2 = comb[0]['Eta'].values[0], comb[1]['Eta'].values[0]
