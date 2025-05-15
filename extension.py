@@ -6,9 +6,9 @@ stuff that this file does:
     - t-SNE clustering of the data which is good for visualizing high dimensional data, 
     but i thought it would be cool if you could see the cluster that has the actual higgs mass
     - DBSCAN clustering of the t-SNE data to separate the clusters in the t-SNE space
-         - there is also functionality to try finding optimal DBSCAN paramters based on a combination of preselected values
+         - there is also functionality to try finding optimal DBSCAN parameters based on a combination of preselected values
            for eps and min_samples (aka how large a cluster is and how many samples are in that cluster)
-    - graphs reprsenting the invariant mass distribution of the clusters
+    - graphs representing the invariant mass distribution of the clusters
     - graphs for the new calculated features for that cluster
     - gaussian fitting to the invariant mass distribution of the clusters
     - 3D t-SNE visualization of the data (because why not)
@@ -377,7 +377,7 @@ plt.grid(True)
 plt.show()
 
 # clusters 12 and 13 seem to have the most accurate median, with cluster 12 having a median of 1306 and mean of 1313
-target_cluster = 12 
+target_cluster = 12
 
 # Create a highlighted t-SNE plot focusing on this cluster
 plt.figure(figsize=(12, 10))
